@@ -1,8 +1,8 @@
 :root {
   --bg: #f5f1e6;
-  --paper: #faf6ee;
-  --ink: #2f2a26;
-  --muted: #6b5e55;
+  --surface: #faf6ee;
+  --primary: #2f2a26;
+  --secondary: #6b5e55;
   --accent: #b08968;
   --accent-2: #d4a373;
   --border: #e1d7c8;
@@ -26,94 +26,8 @@ body {
   line-height: 1.5;
 }
 
-.app-header {
-  padding: 32px 20px 20px;
-  text-align: center;
-  background: linear-gradient(180deg, var(--paper), transparent);
-  border-bottom: 1px solid var(--border);
-}
-
-.app-header h1 {
-  margin: 0 0 4px;
-  font-size: 32px;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
 .content {
   max-width: 860px;
   margin: 24px auto;
   padding: 0 16px 40px;
-}
-
-.song-list {
-  display: grid;
-  gap: 14px;
-}
-
-.song {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px 16px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-}
-
-.song-meta {
-  min-width: 0;
-}
-
-.song-title {
-  margin: 0 0 4px;
-  font-size: 18px;
-}
-
-.song-artist,
-.song-album {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.song-extra {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.song-duration {
-  font-variant-numeric: tabular-nums;
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: #fff9ef;
-}
-
-.save-button {
-  border: 1px solid var(--accent);
-  background: linear-gradient(180deg, #fff, #fff6ea);
-  color: var(--ink);
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: transform 0.05s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.save-button:hover {
-  background: linear-gradient(180deg, #fff, #fff1de);
-  box-shadow: 0 2px 10px rgba(176, 137, 104, 0.15);
-}
-
-.save-button:active {
-  transform: translateY(1px);
 }
